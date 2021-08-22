@@ -19,7 +19,7 @@ char select_nucleobase(int n);
 
 int main(int argc, char *argv[]) {
 	if (argc != 2) {
-		cout << "Error: one argument expected. Please specify the length of the sequence." << endl;
+		cerr << "Error: one argument expected. Please specify the length of the sequence." << endl;
 		return 1;
 	}
 
