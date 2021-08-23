@@ -7,6 +7,7 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
+#include <ctime>
 
 using namespace std;
 
@@ -19,7 +20,7 @@ char select_nucleobase(int n);
 
 int main(int argc, char *argv[]) {
 	if (argc != 2) {
-		cerr << "Error: one argument expected. Please specify the length of the sequence." << endl;
+		cerr << "Error: One argument expected. Please specify the length of the sequence." << endl;
 		return 1;
 	}
 
@@ -39,6 +40,7 @@ string sequence_generator(unsigned long size) {
 	unsigned long i = 0;		// Number of characters
 	int n = 0;					// Random generated number
 
+	srand(time(NULL));
 	while (i < size) {
 		n = rand() % 100 + 1;	// Random number between 1 and 100
 		sequence[i] = select_nucleobase(n);
