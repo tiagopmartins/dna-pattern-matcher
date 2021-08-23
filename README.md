@@ -6,12 +6,12 @@ Match finder built for DNA sequences.
 
 After compiling the file, use (on Linux):
 
-> ./<compiled-file> dna-pattern dna-string-file output-file
+> ./compiled-file dna-pattern dna-string-file output-file
 
 Where:
-	- `dna-pattern` is a string with the pattern
-	- `dna-string-file` is a file containing the DNA strip
-	- `output-file` is the file to write the matches in
+- `dna-pattern` is a string with the pattern
+- `dna-string-file` is a file containing the DNA strip
+- `output-file` is the file to write the matches in
 
 ## License
 
